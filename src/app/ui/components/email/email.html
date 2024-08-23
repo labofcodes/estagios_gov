@@ -1,0 +1,72 @@
+{{user_email}}
+{{programa}}
+{{user_razao_social}}
+{{user_registro}}
+{{user_cpf}}
+{{user_contato}}
+{{cnpj_1}}
+{{Nome_da_empresa_1}}
+{{Nome_do_responsavel_1}}
+{{cnpj_2}}
+{{Nome_da_empresa_2}}
+{{Nome_do_responsavel_2}}
+{{cnpj_3}}
+{{Nome_da_empresa_3}}
+{{Nome_do_responsavel_3}}
+{{observacoes}}
+
+<div style="padding: 20px;">
+
+    <h1>Solicitação de mais informação para o programa: {{programa}}.</h1>
+
+    {{#user_email}}
+    <p>E-mail do solicitante: {{user_email}} </p>
+    {{/user_email}}
+
+    {{#user_razao_social}}
+    <p>Nome / Razão Social: {{user_razao_social}}</p>
+    {{/user_razao_social}}
+
+    {{#user_registro}}
+    <p>N de registro: {{user_registro}}</p>
+    {{/user_registro}}
+
+    {{#user_cpf}}
+    <p>CPF / CNPJ: {{user_cpf}}</p>
+    {{/user_cpf}}
+
+    {{#user_contato}}
+    <p>Contato: {{user_contato}}</p>
+    {{/user_contato}}
+
+    <p>
+        {{#cnpj_1}}
+        CNPJ: {{cnpj_1}},
+        Nome da empresa: {{Nome_da_empresa_1}},
+        Nome do responsavel: {{Nome_do_responsavel_1}}.
+        {{/cnpj_1}}
+    </p>
+
+    <p>
+        {{#cnpj_2}}
+        CNPJ: {{cnpj_2}},
+        Nome da empresa: {{Nome_da_empresa_2}},
+        Nome do responsavel: {{Nome_do_responsavel_2}}.
+        {{/cnpj_2}}
+    </p>
+
+    <p>
+        {{#cnpj_3}}
+        CNPJ: {{cnpj_3}},
+        Nome da empresa: {{Nome_da_empresa_3}},
+        Nome do responsavel: {{Nome_do_responsavel_3}}.
+        {{/cnpj_3}}
+    </p>
+
+
+    {{#observacoes}}
+    <p>Observacoes: {{observacoes}}</p>
+    {{/observacoes}}
+
+
+</div>
